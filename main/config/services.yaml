@@ -4,6 +4,12 @@
 # Put parameters here that don't need to change on each machine where the app is deployed
 # https://symfony.com/doc/current/best_practices.html#use-parameters-for-application-configuration
 parameters:
+    http_url_get: '%env(resolve:HTTP_URL_GET)%'
+    http_url_update: '%env(resolve:HTTP_URL_UPDATE)%'
+    grpc_url_get: '%env(resolve:GRPC_URL_GET)%'
+    grpc_url_update: '%env(resolve:GRPC_URL_UPDATE)%'
+    rest_url_get: '%env(resolve:REST_URL_GET)%'
+    rest_url_update: '%env(resolve:REST_URL_UPDATE)%'
 
 services:
     # default configuration for services in *this* file
